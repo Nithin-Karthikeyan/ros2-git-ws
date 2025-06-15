@@ -27,6 +27,7 @@ class Talker(Node):
         msg.drive.speed = v # m/s
 
         self.get_logger().info(f"Speed: {msg.drive.speed}, Steering Angle: {msg.drive.steering_angle}")
+        print("TEsting new features (assume)")
         self.publisher.publish(msg)
 
         
