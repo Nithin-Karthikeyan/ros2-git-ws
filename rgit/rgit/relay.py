@@ -17,6 +17,7 @@ class Relay(Node):
         rec_msg.drive.steering_angle *= 3
         rec_msg.drive.speed *= 3
         self.get_logger().info(f"Speed: {rec_msg.drive.speed}, Steering Angle: {rec_msg.drive.steering_angle}")
+        print("Assume feateures added to relayy")
         self.publisher.publish(rec_msg)
         
 
